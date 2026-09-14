@@ -17,7 +17,7 @@
 
         <div class="form-group mb-3">
             <label for="content" class="form-label">เนื้อหา</label>
-            <textarea class="form-control" name="content" cols="30" rows="5">{{ old('content') }}</textarea>
+            <textarea class="form-control" name="content" id="content" cols="30" rows="5">{{ old('content') }}</textarea>
             @error('content')
                 <p class="text-danger mt-1">{{ $message }}</p>
             @enderror
